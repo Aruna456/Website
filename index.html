@@ -3,10 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume-Aruna</title>
+    <style>
+     
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            border:2px solid black;
+        }
+
+        body {
+     
+            width: 100vw; 
+            background-color: #a88db352;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: rgb(207, 42, 89); */
+            background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+  1.2px 1.7px 4px rgba(0, 0, 0, 0.031),
+  3.3px 4.7px 9.6px rgba(0, 0, 0, 0.044),
+  6.9px 9.8px 18.2px rgba(0, 0, 0, 0.055),
+  13.1px 18.7px 32.4px rgba(0, 0, 0, 0.066),
+  25.3px 36.3px 60.6px rgba(0, 0, 0, 0.079),
+  60px 86px 145px rgba(0, 0, 0, 0.11)
+            /* border:1px solid black; */
+        }
+
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+           
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 10rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 14rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section-title {
+            /* height: 10%; */
+            color:  #cc0052;
+            font-weight: bold;
+            /* padding: 10px; */
+            /* padding-bottom: 1%; */
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+
+        .companies {
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+       
+    </style>
 </head>
 <body>
-    Hello
+    <div class="section1">
+        
+            <div class="profile-img-section">
+                <img src="./assets/img/dp.jpg" alt="" class="profile-img">
+    
+            </div>
+            
+
+            <div class="profile-data">
+                <h1>Aruna S</h1>
+                <h3>aruna.techbox@gmail.com</h3>
+            </div>
+     
+       
+    </div>
+    <div class="section2">
+        
+            <h1 class="section-title">
+                Objective
+          </h1>
+      
+          <p>
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi provident earum perferendis odio suscipit vero assumenda? Natus iusto quos, reiciendis, sit porro excepturi ad, perspiciatis quo dolorem hic aliquid consectetur!
+          </p>
+    
+        </div>
+        
+    <div class="section3">
+        
+            <h1 class="section-title">
+                Education
+          </h1>
+          <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Deg1</td>
+                <td>school</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Deg2</td>
+                <td>school</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Deg3</td>
+                <td>College</td>
+                <td>85%</td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="section4">
+       
+            <h1 class="section-title">
+                Internships
+          </h1>
+          <p>
+            <dl>   
+                    <dt class="companies">ShadowFox</dt>
+                    <dd>Sep 2024</dd> 
+                    <dd> Web Developer </dd>
+            </dl>
+           
+          </p>
+        
+        
+    </div>
+    <div class="section5"></div>
+    <div class="section6"></div>
     
 </body>
 </html>
