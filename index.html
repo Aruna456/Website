@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume-Aruna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
      
@@ -19,8 +23,8 @@
         body {
      
             width: 100vw; 
-            background-color: #a88db352;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -94,7 +98,7 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
 
         .section3 {
             width: 70%;
-            height: 14rem;
+            height: 16rem;
             /* background-color: aquamarine; */
             /* border: 1px solid black; */
             display: flex;
@@ -107,7 +111,7 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
 
         .section4 {
             width: 70%;
-            height: 10rem;
+            height: 15rem;
             /* background-color: aquamarine; */
             /* border: 1px solid black; */
             display: flex;
@@ -123,32 +127,39 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
             color:  #cc0052;
             font-weight: bold;
             /* padding: 10px; */
-            /* padding-bottom: 1%; */
+            padding-bottom: 1%;
         }
 
 
         .ed-table {
             width: 100%;
-            border: 1px solid gray;
-            border-collapse: collapse;
+            border: 3px solid  #cc0052;
+            
         }
+
+     th{
+        color: #ffffff;
+        background-color: #C6426E;
+        
+     }
 
 
         th,
         td {
             padding: 1rem;
-            border: 1px solid gray;
+            border: 1px solid rgb(188, 20, 154);
         }
 
 
         .companies {
             font-weight: bold;
-            color: rgb(0, 0, 0);
+            color: #bf0e49;
+            font-size: 120%;
         }
 
         .section5 {
             width: 70%;
-            height: 10rem;
+            height: 9rem;
             /* background-color: aquamarine; */
             /* border: 1px solid black; */
             display: flex;
@@ -158,10 +169,9 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
             /* padding: 10px; */
         
         }
-        .li{
+        li{
             list-style: square;
-            display: flex;
-            justify-content: center;
+            margin-left: 2rem;
         }
 
         .section6{
@@ -170,21 +180,99 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
 background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             width:70%;
-            height: 15%;
+            height: 3rem;
             justify-content: center;
+            align-items: center;
             gap:1rem;
         }
+        button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #C6426E;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #C6426E;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #C6426E;
+}
 
-       
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #C6426E;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.sectionbutton{
+
+             width: 70%;
+            height: 5rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid black; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        
+           
+        }
+           
+/*
+*  STYLE 13
+*/
+
+
+   
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #cd1baad7;
+} 
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgb(176, 13, 141) 0%,
+											  rgb(203, 40, 135) 25%,
+											  transparent 100%,
+											  rgb(216, 24, 158) 75%,
+											  transparent);
+
+}
+
+        
     </style>
 </head>
 <body>
+    <!-- <div id="wrapper">
+          <div class="scrollbar" id="style-13">
+            <div class="force-overflow"></div>
+          </div>
+      
+      </div> -->
 
     <div class="section1">
         
             <div class="profile-img-section">
-                <img src="./assets/img/dp.jpg" alt="" class="profile-img">
-    
+                <img src="./assets/img/Aruna.png" alt="" class="profile-img">
+ 
+
             </div>
             
 
@@ -197,7 +285,7 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
     </div>
     <div class="section2">
         
-            <h1 class="section-title">
+          <h1 class="section-title">
                 Objective
           </h1>
       
@@ -220,18 +308,18 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
             </tr>
             <tr>
                 <td>SSLC</td>
-                <td>St.Assisi HSC,Pcm</td>
+                <td>St.Assisi HSC</td>
                 <td>95%</td>
             </tr>
             <tr>
                 <td>HSC</td>
-                <td>St.Assisi HSC,Pcm</td>
+                <td>St.Assisi HSC</td>
                 <td>90%</td>
             </tr>
             <tr>
                 <td>B.Tech</td>
-                <td>College</td>
-                <td>9.35%</td>
+                <td>SIET</td>
+                <td>9.35</td>
             </tr>
           </table>
         
@@ -241,26 +329,46 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
        
             <h1 class="section-title">
                 Internships
-          </h1>
-          <p>
-            <dl>   
-                    <dt class="companies">ShadowFox</dt>
-                    <dd>Sep 2024</dd> 
-                    <dd> Web Developer </dd>
-            </dl>
+            </h1>
+            <h4 class="companies">ShadowFox</h4>
+                <ul>
+                    <li>
+                        Web Developer
+                    </li>
+                    <li>
+                        Septemper 2024
+                    </li>
+                </ul>
+                <h4 class="companies">ShadowFox</h4>
+                <ul>
+                    <li>
+                        Web Developer
+                    </li>
+                    <li>
+                        Septemper 2024
+                    </li>
+                </ul>
+
            
-          </p>
-        
-        
     </div>
     <div class="section5">
         <h1 class="section-title">Skills</h1>
         <ul>
             <li>MERN</li>
             <li>Java</li>
+            <li>PowerBi</li>
+            <li>SQL</li>
+            <li>Git and Github</li>
         </ul>
 
     </div>
+    <div class="sectionbutton">
+     
+              <button  onclick="location.href='https://docs.google.com/document/d/1fJSWSRq6g3hzvk_MXPspdY_2caUOIBpCWkSQYvJovn0/edit?usp=drive_link';" target="_blank">
+                Resume
+            </button>
+    </div>
+    
     <div class="section6">
        
             <a href="tel:+918072019745"> <i class="fa-solid fa-phone"></i></a>
@@ -270,8 +378,10 @@ background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, F
             <a href="http://www.linkedin.com/in/aruna-subramanian-b42869271"  target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-      
 
+        
+
+      
     </div>
 </body>
 </html>
