@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        button {
+
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            border: none;
+            border-radius:10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form {
+
+            width: 50%;
+            margin: 0 auto;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            box-shadow:
+                2.5px 2.4px 9.9px rgba(0, 0, 0, 0.59),
+                5.9px 5.6px 23.1px rgba(0, 0, 0, 0.255),
+                10.6px 10.1px 41.5px rgba(0, 0, 0, 0.14),
+                17.7px 16.7px 68.9px rgba(0, 0, 0, 0.081),
+                29.1px 27.5px 113.5px rgba(0, 0, 0, 0.046),
+                50.9px 48.1px 198.3px rgba(0, 0, 0, 0.023),
+                110px 104px 429px rgba(0, 0, 0, 0.009);
+            background: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+
+
+
+        }
+
+
+        input {
+            width: 55%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 10%;
+            /* border: 1px solid black; */
+            border: none;
+            border-radius: 5px;
+            color: black;
+
+        }
+
+        input:hover {
+            border: 3px solid #ffffff;
+            transition: 0.1s border ease-in;
+
+
+        }
+
+        /* .box{
+
+            width: 10rem;
+            height: 10rem;
+            border: 3px solid pink;
+            display: grid;
+            
+
+        } */
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ad5389;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #ad5389);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            /* border:3px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <form action="" >
+
+            <input type="text" name="name" id="name" placeholder=" Enter Username">
+            <br>
+
+            <input type="email" name="mail" id="email" placeholder=" Enter Mail">
+            <br>
+
+            <input type="tel" name="phn" id="phn" placeholder=" Enter PhoneNumber">
+            <br>
+
+            <input type="password" name="pwd" id="pwd" placeholder=" Enter password">
+            <br>
+            <button type="submit" onclick="formdata()">Register</button>
+
+        </form>
+
+    </div>
+</body>
+
+<script>
+
+    let namevalue=document.getElementById("name").value;
+    // let email=document.getElementById('mail').value;
+    // let ph=document.getElementById('phn').value;
+    // let pwd=document.getElementById('phn').value;
+
+    function formdata()
+    {
+        alert("Hi"+namevalue);
+    }
+
+</script>
+
+</html>
