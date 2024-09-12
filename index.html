@@ -1,387 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume-Aruna</title>
+    <title>Resume - Aruna S</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-     
         * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .container{
-            border:2px solid black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-     
-            width: 100vw; 
+            font-family: 'Poppins', sans-serif;
             background-color: #f9f9f9;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            color: #333;
             display: flex;
             flex-direction: column;
-            justify-content: start;
-            align-items: center;
+            align-items: stretch;
+            min-height: 100vh;
         }
-
 
         .section1 {
-            width: 70%;
-            height: 12rem;
-            /* background-color: rgb(207, 42, 89); */
-            background: #642B73;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            box-shadow:
-  1.2px 1.7px 4px rgba(0, 0, 0, 0.031),
-  3.3px 4.7px 9.6px rgba(0, 0, 0, 0.044),
-  6.9px 9.8px 18.2px rgba(0, 0, 0, 0.055),
-  13.1px 18.7px 32.4px rgba(0, 0, 0, 0.066),
-  25.3px 36.3px 60.6px rgba(0, 0, 0, 0.079),
-  60px 86px 145px rgba(0, 0, 0, 0.11)
-            /* border:1px solid black; */
-        }
-
-
-        .profile-img-section {
-            width: 40%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        .profile-data {
-            width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+            background: linear-gradient(to right, #C6426E, #642B73);
             color: white;
-           
+            flex: 0 1 250px;
         }
-
 
         .profile-img {
-            height: 8rem;
-            width: 8rem;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
+            border: 3px solid white;
         }
 
+        .profile-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
 
-        .section2 {
-            width: 70%;
-            height: 10rem;
-            /* background-color: aquamarine; */
-            /* border: 1px solid black; */
+        .profile-email {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .two-column {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .column {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-        
+            padding: 1rem;
         }
-
-
-        .section3 {
-            width: 70%;
-            height: 16rem;
-            /* background-color: aquamarine; */
-            /* border: 1px solid black; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-        }
-
-
-        .section4 {
-            width: 70%;
-            height: 15rem;
-            /* background-color: aquamarine; */
-            /* border: 1px solid black; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-        }
-
 
         .section-title {
-            /* height: 10%; */
-            color:  #cc0052;
-            font-weight: bold;
-            /* padding: 10px; */
-            padding-bottom: 1%;
+            font-weight: 700;
+            color: #C6426E;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
         }
 
+        p,
+        li {
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
 
-        .ed-table {
+        ul {
+            list-style-type: disc;
+        }
+
+        table {
             width: 100%;
-            border: 3px solid  #cc0052;
-            
+            margin-bottom: 1rem;
         }
 
-     th{
-        color: #ffffff;
-        background-color: #C6426E;
-        
-     }
-
+        table,
+        th,
+        td {
+            border: none !important;
+        }
 
         th,
         td {
-            padding: 1rem;
-            border: 1px solid rgb(188, 20, 154);
+            padding: 0.75rem;
+            border: 1px solid #C6426E;
+            text-align: left;
+            font-size: 1rem;
         }
 
-
-        .companies {
-            font-weight: bold;
-            color: #bf0e49;
-            font-size: 120%;
+        th {
+            background-color: #C6426E;
+            color: white;
         }
 
-        .section5 {
-            width: 70%;
-            height: 9rem;
-            /* background-color: aquamarine; */
-            /* border: 1px solid black; */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        li {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-        
-        }
-        li{
-            list-style: square;
-            margin-left: 2rem;
+            justify-content: start;
         }
 
-        .section6{
+        .contact-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        .section-footer {
             display: flex;
-            background: #642B73;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            width:70%;
-            height: 3rem;
             justify-content: center;
             align-items: center;
-            gap:1rem;
+            background-color: #642B73;
+            color: white;
+            flex: 0 1 60px;
+            gap: 2.5rem;
         }
+
+
         button {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #C6426E;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #C6426E;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #C6426E;
-}
-
-button:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #C6426E;
-}
-
-button:active {
-  transform: scale(0.9);
-}
-.sectionbutton{
-
-             width: 70%;
-            height: 5rem;
-            /* background-color: aquamarine; */
-            /* border: 1px solid black; */
-            display: flex;
-            /* flex-direction: column; */
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-        
-           
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            color: #C6426E;
+            border: 2px solid #C6426E;
+            background: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
-           
-/*
-*  STYLE 13
-*/
 
-
-   
-*::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
-	background-color: #cd1baad7;
-} 
-
-*::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
-}
-
-*::-webkit-scrollbar-thumb
-{
-	background-color: #FFF;
-	background-image: -webkit-linear-gradient(90deg,
-	                                          rgb(176, 13, 141) 0%,
-											  rgb(203, 40, 135) 25%,
-											  transparent 100%,
-											  rgb(216, 24, 158) 75%,
-											  transparent);
-
-}
-
-        
+        button:hover {
+            background-color: #C6426E;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
-    <!-- <div id="wrapper">
-          <div class="scrollbar" id="style-13">
-            <div class="force-overflow"></div>
-          </div>
-      
-      </div> -->
 
     <div class="section1">
-        
-            <div class="profile-img-section">
-                <img src="./assets/img/Aruna.png" alt="" class="profile-img">
- 
-
-            </div>
-            
-
-            <div class="profile-data">
-                <h1>Aruna S</h1>
-                <h3>aruna.techbox@gmail.com</h3>
-            </div>
-     
-       
+        <img src="./assets/img/Aruna.png" alt="Aruna's Profile Picture" class="profile-img">
+        <h1 class="profile-name">Aruna S</h1>
+        <h3 class="profile-email">aruna.techbox@gmail.com</h3>
     </div>
-    <div class="section2">
-        
-          <h1 class="section-title">
-                Objective
-          </h1>
-      
-          <p>
-            Full Stack Developer dedicated to solving complex problems with Java. Currently pursuing a Bachelor's in Information Technology, I'm focused on mastering both front-end and back-end development to create responsive, user-friendly web applications.
-          </p>
-    
+
+
+    <div class="two-column">
+
+        <div class="column">
+            <h2 class="section-title">Objective</h2>
+            <p>Dedicated Full Stack Developer proficient in Java, seeking to solve complex problems through responsive,
+                user-friendly web applications. Currently pursuing a Bachelor's in Information Technology.</p>
+
+            <h2 class="section-title">Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>St. Assisi Matric Hr. Sec. School</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>St. Assisi Matric Hr. Sec. School</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>Sri Shakthi Institute of Engineering and Technology</td>
+                    <td>9.35 CGPA</td>
+                </tr>
+            </table>
+
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills">
+                <li>MERN Stack</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>PowerBI</li>
+                <li>Git and GitHub</li>
+            </ul>
         </div>
-        
-    <div class="section3">
-        
-            <h1 class="section-title">
-                Education
-          </h1>
-          <table class="ed-table">
-            <tr>
-                <th>Degree</th>
-                <th>Campus</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td>SSLC</td>
-                <td>St.Assisi HSC</td>
-                <td>95%</td>
-            </tr>
-            <tr>
-                <td>HSC</td>
-                <td>St.Assisi HSC</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>B.Tech</td>
-                <td>SIET</td>
-                <td>9.35</td>
-            </tr>
-          </table>
-        
-      
-    </div>
-    <div class="section4">
-       
-            <h1 class="section-title">
-                Internships
-            </h1>
-            <h4 class="companies">ShadowFox</h4>
-                <ul>
-                    <li>
-                        Web Developer
-                    </li>
-                    <li>
-                        Septemper 2024
-                    </li>
-                </ul>
-                <h4 class="companies">ShadowFox</h4>
-                <ul>
-                    <li>
-                        Web Developer
-                    </li>
-                    <li>
-                        Septemper 2024
-                    </li>
-                </ul>
 
-           
-    </div>
-    <div class="section5">
-        <h1 class="section-title">Skills</h1>
-        <ul>
-            <li>MERN</li>
-            <li>Java</li>
-            <li>PowerBi</li>
-            <li>SQL</li>
-            <li>Git and Github</li>
-        </ul>
+        <div class="column">
+            <h2 class="section-title">Experience</h2>
+            <h4>Web Developer Intern - ShadowFox</h4>
+            <ul>
+                <li>Developed and maintained dynamic websites</li>
+                <li>Duration: September 2024 - Present</li>
+            </ul>
 
-    </div>
-    <div class="sectionbutton">
-     
-              <button  onclick="location.href='https://docs.google.com/document/d/1fJSWSRq6g3hzvk_MXPspdY_2caUOIBpCWkSQYvJovn0/edit?usp=drive_link';" target="_blank">
-                Resume
-            </button>
-    </div>
-    
-    <div class="section6">
-       
-            <a href="tel:+918072019745"> <i class="fa-solid fa-phone"></i></a>
-           <a href="mailto:aruna.techbox@outlook.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-           </a>
-            <a href="http://www.linkedin.com/in/aruna-subramanian-b42869271"  target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+            <h2 class="section-title">Projects</h2>
 
-        
+            <h4>KheloSpot</h4>
+            <ul>
+                <li>Designed and developed a sports event management platform using HTML, CSS, and JavaScript.</li>
+                <li>Implemented a feature that allows users to register for events, with registration details
+                    automatically emailed to event organizers.</li>
+            </ul>
 
-      
+            <h4>Expense Tracker</h4>
+            <ul>
+                <li>Built a comprehensive expense tracking application utilizing the MERN stack (MongoDB, Express,
+                    React, Node.js).</li>
+                <li>Developed a dynamic single-page application to display real-time tracking of user expenses.</li>
+            </ul>
+
+            <h4>RescueAid App</h4>
+            <ul>
+                <li>Created a community assistance platform using React Native and Java, connecting volunteers with
+                    individuals in need during crises.</li>
+                <li>Integrated APIs to provide real-time data updates, notifications, and streamlined communication
+                    between users and responders.</li>
+            </ul>
+
+
+            <div class="sectionbutton">
+                <button
+                    onclick="location.href='https://docs.google.com/document/d/1fJSWSRq6g3hzvk_MXPspdY_2caUOIBpCWkSQYvJovn0/edit?usp=drive_link';"
+                    target="_blank">
+                    Download Resume
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="section-footer contact-icons">
+        <a href="http://www.linkedin.com/in/aruna-subramanian-b42869271" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:aruna.techbox@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Aruna456" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
 </body>
+
 </html>
