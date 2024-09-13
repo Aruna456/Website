@@ -75,7 +75,7 @@
             border: none;
             border-radius: 5px;
             color: black;
-            background: none;
+            background:  #B2FEFA;
         }
 
         input:hover {
@@ -121,7 +121,7 @@
     <div class="container">
 
 
-        <form action="">
+        <form  onsubmit="formdata()">
 
             <input type="text" name="name" id="name" placeholder=" Enter Username">
             <br>
@@ -134,7 +134,7 @@
 
             <input type="password" name="pwd" id="pwd" placeholder=" Enter password">
             <br>
-            <button type="submit" onclick="formdata()">Register</button>
+            <button type="submit" >Register</button>
 
         </form>
 
@@ -143,13 +143,14 @@
 
 <script>
 
-    let namevalue = document.getElementById("name").value;
+  
     // let email=document.getElementById('mail').value;
     // let ph=document.getElementById('phn').value;
     // let pwd=document.getElementById('phn').value;
 
     function formdata() {
-        alert("Hi" + namevalue);
+        let namevalue = document.getElementById("name").value;
+        alert("Hi " + namevalue);
     }
 
 </script>
