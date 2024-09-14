@@ -74,15 +74,19 @@
             /* border: 1px solid black; */
             border: none;
             border-radius: 5px;
-            color: black;
-            background:  #B2FEFA;
+            /* color: black; */
+            background: #B2FEFA;
         }
 
         input:hover {
-            border: 3px solid  #B2FEFA;
+            border: 3px solid #4acbbe;
             transition: 0.2s border ease-in;
 
 
+        }
+
+        input:focus {
+            outline: none;
         }
 
         /* .box{
@@ -111,6 +115,11 @@
 
 
         }
+
+        .section-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
     </style>
 </head>
 
@@ -121,20 +130,28 @@
     <div class="container">
 
 
-        <form  onsubmit="formdata()">
+        <form onsubmit="formdata(event)">
 
-            <input type="text" name="name" id="name" placeholder=" Enter Username">
+            <h1 class="section-title">
+                Register
+            </h1><br>
+
+            <input type="text" name="name" id="name" placeholder="Username">
             <br>
 
-            <input type="email" name="mail" id="email" placeholder=" Enter Mail">
+            <input type="email" name="mail" id="mail" placeholder="Mail">
             <br>
 
-            <input type="tel" name="phn" id="phn" placeholder=" Enter PhoneNumber">
+            <input type="number" name="age" id="age" placeholder="Age">
             <br>
 
-            <input type="password" name="pwd" id="pwd" placeholder=" Enter password">
+
+            <input type="tel" name="phn" id="phn" placeholder="PhoneNumber">
             <br>
-            <button type="submit" >Register</button>
+
+            <input type="password" name="pwd" id="pwd" placeholder="Password">
+            <br>
+            <button type="submit">Register</button>
 
         </form>
 
@@ -143,14 +160,53 @@
 
 <script>
 
-  
-    // let email=document.getElementById('mail').value;
-    // let ph=document.getElementById('phn').value;
-    // let pwd=document.getElementById('phn').value;
+    function formdata(event) {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        let email = document.getElementById('mail').value;
+        let phn = document.getElementById('phn').value;
+        let pwd = document.getElementById('pwd').value;
+        let age = document.getElementById('age').value;
 
-    function formdata() {
-        let namevalue = document.getElementById("name").value;
-        alert("Hi " + namevalue);
+        console.log("Name: " + name);
+        console.log("Email: " + email);
+        console.log("Phone: " + phn);
+        console.log("Age: " + age);
+        console.log("Password: " + pwd);
+
+        if (name !== " " && age !== 0 && email !== " " && pwd !== " " && phn !== 0) {
+            if (name === "Aruna" || email === "aru@gmail.com") {
+                console.log("Username already exist");
+
+            }
+            else {
+                console.log("Sucess!!");
+
+            }
+        }
+        else {
+            console.log("Empty Fields not allowed");
+
+        }
+
+
+
+        const data1 = {
+            uname: name,
+            uphn: phn,
+            umail: email,
+            upwd: pwd,
+            utype: age > 18 ? "Major" : "Minor"
+        };
+
+        const { uname, uphn, umail, upwd, utype } = data1;
+
+        console.log(utype);
+
+        alert("Hi " + name);
+
+
+
     }
 
 </script>

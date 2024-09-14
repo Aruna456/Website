@@ -1,62 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* *{
     margin:0px;
     padding:0px;
 } */
-.container{
-   /* width:100vw;
-   height: 100vh; */
-   display: grid;
-   /* grid-template-columns: 250px 250px 250px;
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 250px 250px 250px;
    grid-template-rows: 250px 250px 250px;  */
-   grid-template-columns: repeat(3,33%);
-   grid-template-rows: repeat(3,33%);
-   grid-gap:1%;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    grid-gap: 1%;
 }
-/* @media only screen and (max-width:600px) {
 
-    .orange{
-        background-color: rgb(217, 114, 114);
-    
-    }
-    .red{
-        background-color:rgb(215, 79, 79);
-     
-    
-    }
-    .purple{
-        background-color:rgb(184, 127, 237);
-     
-    }
-    
-    
-} */
+
+
 @keyframes entry {
 
-     from{
+    from {
         transform: translateX(0%);
-     }
-     to{
+    }
+
+    to {
         transform: translateX(100%);
-     }
-    
+    }
+
 }
 
-.red{
-    animation:  5s entry ease-in ;
+.red {
+    animation: 5s entry ease-in;
 }
+
 @keyframes exit {
-    from{
+    from {
         transform: translateX(100%);
     }
-    to{
+
+    to {
         transform: translateX(0%);
     }
 }
-.orange{
+
+.orange {
     animation: 5s exit ease-out;
 }
-.name{
+
+.name {
     width: 70vw;
     height: 90vh;
     display: flex;
@@ -66,44 +57,70 @@
     font-family: Arial, Helvetica, sans-serif;
     color: yellow;
 }
+
 @keyframes emoteanimation {
 
-    from{
+    from {
         transform: scaleX(0%);
         opacity: 0.5;
     }
-    to{
+
+    to {
         transform: scaleX(100%);
         opacity: 1%;
     }
-    
+
 }
-.emoji{
+
+.emoji {
 
     animation: 5s emoteanimation ease-in;
     size: 50%;
-    
+
 
 }
+
 /*.box{
 
     width: 10rem;
     height: 10rem;
 
 } */
- .orange{
+.orange {
     background-color: orange;
 
 }
 
-.red{
-    background-color:red;
+.red {
+    background-color: red;
     grid-row: 2/3;
-    grid-column:-2/-3;
+    grid-column: -2/-3;
 
 }
-/* .purple{
-    background-color:blueviolet;
-    grid-row:3/4;
-    grid-column:-1/-2;
-} */
+
+.purple {
+    background-color: blueviolet;
+    grid-row: 3/4;
+    grid-column: -1/-2;
+}
+
+@media only screen and (max-width:600px) {
+
+    .orange {
+        background-color: rgb(217, 114, 114);
+
+    }
+
+    .red {
+        background-color: rgb(215, 79, 79);
+
+
+    }
+
+    .purple {
+        background-color: rgb(184, 127, 237);
+
+    }
+
+
+}
